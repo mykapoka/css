@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title> kapoka 的第一个网页 </title>
     <style type="text/css">
-        <body>{
-          background-color: red;
+        body {
+          background-color: yellowgreen;
         }
     </style>
 </head>
 <body>
    <h1 style="text-align: center "> 学写HTML 及 JavaScript的编程 </h1>
-   <big> <pre>         H<sup>2</sup>O</pre><hr/>
+   <pre>    H<sup>2</sup>O</pre><hr/>
 
    <form method="post" action="">
-       <p>姓名：<input name="name1" type="text" size="30"></p>
-       <p>性别：<label><input name="sex1" type="radio" value="male" checked="on">男</label>
-               <label><input name="sex1" type="radio" value="female" >女</label>
+       <p>姓名：<input name="name1" type="text" size="30"/></p>
+       <p>性别：
+           <input name="sex"  id="male"  type="radio" value="male" checked="on"/><label for="male">男</label>
+           <input name="sex"  id="female"  type="radio" value="female" /><label for="female">女</label>
        </p>
        <hr/>
        <ol>
@@ -26,7 +27,5 @@
        </ol>
        <hr/>
    </form>
-
-
 </body>
 </html>
