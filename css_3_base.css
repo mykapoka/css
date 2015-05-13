@@ -1,0 +1,25 @@
+
+* {padding: 0;
+    margin: 0
+  }
+
+    #masthead {background-color: cadetblue }
+    #left_page {background-color: firebrick }
+    #page_content {background-color: snow }
+    #right_page {background-color: darkgoldenrod}
+    #footer_page {background-color: red}
+
+    #container {margin: 5px 0 5px  0;}
+
+    body {padding: 30px}
+
+    #masthead,#left_page,#page_content,#right_page,#footer_page{
+        padding: 30px  40px 30px  40px;
+    }
+
+      #masthead,#footer_page{
+        font-size: 20px;
+        text-align: center;
+    }
+
+       #left_page ul,   #right_page  ul {list-style-type: none}  /*   去掉导航的列表标记*/
