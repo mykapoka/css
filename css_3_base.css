@@ -3,23 +3,39 @@
     margin: 0
   }
 
+  body{
+      background-color: #FFF;
+  }
+
     #masthead {background-color: cadetblue }
-    #left_page {background-color: firebrick }
+    #left_col {background-color: lightskyblue }
     #page_content {background-color: snow }
-    #right_page {background-color: darkgoldenrod}
-    #footer_page {background-color: red}
+    #img_table {background-color:  cornsilk }
+    #right_col {background-color:  cornflowerblue }
+    #footer_page {background-color:  gold }
 
-    #container {margin: 5px 0 5px  0;}
+    #container {margin: 2px 5px 5px  2px;}
 
-    body {padding: 30px}
+    body {padding: 5px}
 
-    #masthead,#left_page,#page_content,#right_page,#footer_page{
-        padding: 30px  40px 30px  40px;
+     #login_style {  "padding: 10px; margin: 20px;  "
+    }
+
+    #masthead,#left_col,#page_content,#right_col,#footer_page{
+        padding: 10px  10px 10px  10px;
     }
 
       #masthead,#footer_page{
         font-size: 20px;
         text-align: center;
     }
+      /*  后代演示 */
+      #list_of_report h1 {counter-increment: chapter;    counter-reset: section;   }
+      #list_of_report h1:before { content : "第" counter(chapter) "章  ";  }
 
-       #left_page ul,   #right_page  ul {list-style-type: none}  /*   去掉导航的列表标记*/
+      h2 {counter-increment: section; counter-reset: subsec}
+      h2:before { content: "第"counter(chapter)"."counter(section) " "}
+}
+
+
+       #left_col ul,   #right_col  ul {list-style-type: none}  /*   去掉导航的列表标记*/

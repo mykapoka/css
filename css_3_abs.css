@@ -1,34 +1,45 @@
 
 #page_wrapper{
-    width:840px;
+    width:800px;
     margin-left:auto;
     margin-right:auto;
 }
 
-#masthead {}
+#masthead {
+    min-height: 10px;
+}
 
 #container {
-    position:relative;
-    min-height:500px;
+    position: relative;
+    min-height:700px;
+}
+#left_col {
+    position : absolute;
+    width : 120px; height:100%;
 }
 
-#left_page {
-    position : relative;
-    left:0px; top:0px;
-    width : 100px; height:100%;
-}
-
-#page_content {
-    height:100%;
-    magin-left:220px; margin-right:220px;
-}
-
-#right_page {
+#right_col {
     position : absolute;
     right:0px; top:0px;
-    width : 100px; height:100%;
+    width : 120px; height:100%;
 }
 
-#footer_page {}
+#img_table{
+    position: absolute;
+    margin-left: 150px;
+    height::100%;
+}
+
+#list_of_report {
+    position: relative;
+    margin-left: 190px;
+    margin-top: 300px;
+    height:100%;
+}
+
+#footer_page {
+    margin-top: 20px;
+    min-height: 100px;
+}
 
 
