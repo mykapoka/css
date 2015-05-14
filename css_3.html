@@ -5,57 +5,88 @@
     <title>关于CSS及HTML的大结局</title>
     <link rel="stylesheet" type="text/css"  href="css_3_base.css" />
     <link rel="stylesheet" type="text/css"  href="css_3_abs.css" />
+
 </head>
 <body>
+
    <div id="page_wrapper">
        <!--    页头   -->
        <div id="masthead">
 
+           <img src="add.ico" align="left" height="50">
+           <img src="add.ico" align="right" height="50">
            <h1> 深圳市保健办 </h1>
 
-       </div>
 
-       <!--    左侧导航栏   -->
-       <div id="left_page">
-           <ul>
-               <li>aaaaa</li>
-               <li>bbbb</li>
-               <li>ccccc</li>
-           </ul>
        </div>
-
 
        <!--    主页内容   -->
-       <div id="page_content">
+       <div id="container">
+           <!--    左侧导航栏   -->
+           <div id="left_col">
+               <ul>
+                   <li>111</li>
+                   <li>222</li>
+                   <li>333</li>
+               </ul>
+           </div>
 
-           <table width="600px" border="1" cellpadding="0" cellspacing="0" >
-               <caption> 关于检验结果</caption>
-               <vhead>
-                   <tr><th>序号</th><th>名称</th><th>结果</th></tr>
-               </vhead>
-               <vbody>
-                   <tr><td>1</td><td>血糖</td><td >6.0</td></tr>
-                   <tr><td>2</td><td>BUN</td><td>3.00</td></tr>
-               </vbody>
-               <vfoot>
-                   <tr><td colspan="3" align="center">介绍完整的表格</td></tr>
-               </vfoot>
-           </table>
+
+           <div id="page_content">
+           </div>
+
+            <div id="img_table" align="center" >
+                   <table   width="100%" border="1" cellpadding="0" cellspacing="0">
+                       <caption>图像结果</caption>
+                       <tr> <th>DR</th>   <th>ECG</th> </tr>
+                       <tr> <td>11</td> <td>222 </td></tr>
+                       <tr> <td height="200"> <img src="1.jpg" height="200" alt="DR"> </td>  <td> <img src="2.jpg" height="200" alt="ECG"> </td></tr>
+                   </table>
+             </div>
+
+           <div id="list_of_report">
+               <pre style="font-weight: bold;">       关于体检报告的详细说明</pre>
+               <hr/>
+
+                 <h1>HTML技术</h1>
+                   <h2>base</h2>
+                   <h2>base h2</h2>
+                 <h1>CSS技术</h1>
+                   <h2>css1</h2>
+                   <h2>css2</h2>
+               <hr/>
+               <pre>   </pre>
+
+               <form method="post" action=""   >
+                   <fieldset name="group1" style="width: 400px">
+                       <legend>   用户名及密码</legend>
+                       <p><dfn id="login_style">用户：</dfn> <input name="username" type="text" size="30"/></p>
+                       <p style="padding: 10px; margin: 20px;  ">密码：   <input name="password" type="text" size="30"/></p>
+                   </fieldset>
+                   <p><input name="submit1" type="submit" value="登录"/></p>
+
+               </form>
+
+           </div>
+
+           <!--    右侧导航栏   -->
+           <div id="right_col">
+               <ul>
+                   <li>aaa</li>
+                   <li>bbb</li>
+                   <li>ccc</li>
+               </ul>
+           </div>
+
+
 
        </div>
-
-       <!--    右侧导航栏   -->
-       <div id="right_page">
-           <ul>
-               <li>11111</li>
-               <li>22222</li>
-               <li>33333</li>
-           </ul>
-       </div>
-
        <!--    页尾   -->
        <div id="footer_page">
-           <p> 关于深圳市保健办体检报告查询</p>
+           <p> 常用网站</p>
+           <table border="0" width=100%>
+               <tr> <td> <a style="text-decoration: none" href="http://www.wsb.com"> 卫生部 </a></td> <td> <a href="http://www.sohu.com">新浪</a></td> <td>搜狐</td> <td>凤凰网</td> </tr>
+           </table>
        </div>
 
    </div>
